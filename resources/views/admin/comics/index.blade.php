@@ -2,6 +2,11 @@
 
 @section('content')
     <div class="container">
+        <a href="{{ route('admin.comics.create') }}" type="button" name="createComic" id="createComic"
+            class="btn btn-primary my-2">
+            Add
+        </a>
+
         <div class="table-responsive">
             <table class="table table-primary">
                 <thead>

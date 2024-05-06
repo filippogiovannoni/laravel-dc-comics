@@ -2,14 +2,14 @@
 
 @section('content')
     <div class="container">
-        <form action="" method="post">
+        <form action="{{ route('admin.comics.store') }}" method="post">
             @csrf
 
             <div class="mb-3">
                 <label for="" class="form-label">Titolo</label>
                 <input type="text" class="form-control" name="title" id="title" aria-describedby="titleHelper"
-                    placeholder="Inserisci il nome del fumetto" />
-                <small id="helpId" class="form-text text-muted">Il signore degli anelli</small>
+                    placeholder="Il signore degli anelli" />
+                <small id="helpId" class="form-text text-muted">The comic title</small>
             </div>
             <div class="mb-3">
                 <label for="" class="form-label">Descrizione</label>
