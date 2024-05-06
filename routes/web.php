@@ -20,7 +20,10 @@ Route::get('/', function () {
 
 Route::get('/admin/comics', [ComicController::class, 'index'])->name('admin.comics.index');
 
+Route::get('/admin/comics/create', [ComicController::class, 'create'])->name('admin.comics.create');
+
 Route::get('/admin/comics/{comic}', [ComicController::class, 'show'])->name('admin.comics.show');
+
 
 
 
