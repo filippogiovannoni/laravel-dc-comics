@@ -31,6 +31,7 @@
                             </td>
                             <td>
                                 <a href="{{ route('admin.comics.show', $comic) }}">View</a>
+                                <a href="{{ route('admin.comics.edit', $comic) }}">Edit</a>
                             </td>
                         </tr>
                     @empty

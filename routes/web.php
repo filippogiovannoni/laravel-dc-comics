@@ -27,6 +27,10 @@ Route::post('/admin/comics', [ComicController::class, 'store'])->name('admin.com
 
 Route::get('/admin/comics/{comic}', [ComicController::class, 'show'])->name('admin.comics.show');
 
+Route::get('/admin/comics/{comic}/edit', [ComicController::class, 'edit'])->name('admin.comics.edit');
+
+Route::put('/admin/comics/{comic}', [ComicController::class, 'update'])->name('admin.comics.update');
+
 
 
 
