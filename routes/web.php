@@ -31,9 +31,7 @@ Route::get('/admin/comics/{comic}/edit', [ComicController::class, 'edit'])->name
 
 Route::put('/admin/comics/{comic}', [ComicController::class, 'update'])->name('admin.comics.update');
 
-
-
-
+Route::delete('/admin/comics/{comic}', [ComicController::class, 'destroy'])->name('admin.comics.destroy');
 
 
 
