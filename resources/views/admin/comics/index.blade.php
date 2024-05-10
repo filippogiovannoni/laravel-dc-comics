@@ -30,8 +30,10 @@
                                 <img width="100px" src="{{ $comic->img_url }}" alt="cover_image">
                             </td>
                             <td>
-                                <a class="btn btn-primary btn-sm" href="{{ route('admin.comics.show', $comic) }}">View</a>
-                                <a class="btn btn-secondary btn-sm" href="{{ route('admin.comics.edit', $comic) }}">Edit</a>
+                                <a class="btn btn-primary btn-sm my-1"
+                                    href="{{ route('admin.comics.show', $comic) }}">View</a>
+                                <a class="btn btn-secondary btn-sm my-1"
+                                    href="{{ route('admin.comics.edit', $comic) }}">Edit</a>
                                 <form action="{{ route('admin.comics.destroy', $comic) }}" method="post">
                                     @csrf
 
